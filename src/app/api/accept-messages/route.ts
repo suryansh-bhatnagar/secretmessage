@@ -1,7 +1,7 @@
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '../auth/[...nextauth]/options';
 import dbConnect from '@/lib/dbConnect';
-import UserModel from '@/model/User';
+import UserModel from '@/model/User.model';
 import { User } from 'next-auth';
 
 export async function POST(request: Request) {
